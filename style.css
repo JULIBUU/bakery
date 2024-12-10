@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Horario de atención */
+.opening-hours {
+    background-color: #f1d4e0;
+    padding: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos del header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.header h1 {
+    margin: 0 0 20px 0;
+    font-size: 36px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Estilos para contenedores e imágenes */
+.container img {
+    margin-top: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    background-image: url("../images/branding 3.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Sección de contenido */
+.content p:first-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.content p:last-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Sección BEST SELLINGS */
+.section-title {
+    font-size: 36px;
+    color: #e05c88;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Estilos para las imágenes BEST SELLINGS */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.imagenes img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.imagenes img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Nuevas Estilos para "TAMBIÉN TENEMOS" */
+.additional-products {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.left-image {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.left-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease-in-out;
+    max-height: 300px; /* Ajusta el tamaño de la imagen si es necesario */
+}
+
+.left-image img:hover {
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+.right-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.right-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1; /* Forzar que las imágenes sean cuadradas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease-in-out;
+}
+
+.right-images img:hover {
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+/* Mantener la altura del contenedor */
+.additional-products {
+    height: 400px; /* Ajusta según el tamaño de la imagen rectangular */
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para la sección Nosotras */
+.nosotras {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.nosotras h2 {
+    font-size: 36px;
+    color: #e05c88;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.nosotras-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nosotras-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.nosotras-text {
+    max-width: 500px;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+    animation: fadeInRight 1.5s ease-in-out;
+}
+
+.nosotras-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Animaciones para Nosotras */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Centrar los títulos de las secciones de productos (Brownies, Tortas, Rolls, etc.) */
+.product-section h2 {
+    font-size: 24px;
+    text-align: center; /* Centramos el título */
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Carrusel de productos */
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 15px;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.product-carousel img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-carousel img:hover {
+    transform: scale(1.05);
+}
+
+/* Ocultar barra de desplazamiento en navegadores */
+.product-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.product-carousel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Estilos para la sección de delivery divertida */
+.delivery-info h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #e05c88;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.delivery-info p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.delivery-details ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.delivery-details ul li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.delivery-details ul li strong {
+    color: #e05c88;
+}
+
+/* Estilos para la sección física divertida igual a delivery */
+.physical-store h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #e05c88;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.physical-store p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.store-details ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.store-details ul li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.store-details ul li strong {
+    color: #e05c88;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Nueva sección para los productos */
+.additional-products {
+    display: flex;
+    margin-top: 50px;
+}
+
+.left-image {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.left-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 400px;
+}
+
+.right-images {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+}
+
+.right-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    height: 50%;
+}
